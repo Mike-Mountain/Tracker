@@ -18,9 +18,15 @@ export class TasksComponent implements OnInit {
 
   tasks = TASKS;
 
+  selectedTask: Task;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  onSelect(task: Task) {
+    this.selectedTask = task;
+  }
+  
 }
